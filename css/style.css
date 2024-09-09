@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --white: #fff;
+    --brown: #66462F;
+    --black: #363636;
+    --dark-grey: 666666;
+    --grey: #D9D9D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background: url("../img/bg.png");
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+
+    nav {
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                margin-top: 15px;
+                margin-left: 20px;
+            }
+
+            .menu {
+                display: flex;
+                margin-top: 30px;
+                list-style: none;
+
+                li {
+                    margin-left: 50px;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+
+    .header-text {
+        margin-top: 200px;
+        color: var(--white);
+        width: 580px;
+
+        .header-title {
+            font-size: 48px;
+            font-weight: normal;
+        }
+
+        .header-btn {
+            width: 170px;
+            height: 50px;
+            background: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--black);
+            border-radius: 100px;
+            text-decoration: none;
+            margin-top: 30px;
+        }
+    }
+}
+
+.coffee {
+    .coffee-title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+
+    .coffee-slide {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .coffee-card {
+            padding: 10px;
+            border: 1px solid var(--grey);
+            border-radius: 10px;
+            width: 270px;
+
+            .coffee-card-img {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .coffee-card-info {
+                h4 {
+                    margin: 5px 0;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 12px;
+                    color: var(--dark-grey);
+                    margin: 10px 0;
+                }
+            }
+
+            .coffee-card-price {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                a {
+                    background-color: var(--brown);
+                    width: 100px;
+                    height: 25px; 
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 12px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.dessert {
+    .dessert-title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+
+    .dessert-slide {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .dessert-card {
+            padding: 10px;
+            border: 1px solid var(--grey);
+            border-radius: 10px;
+            width: 270px;
+
+            .dessert-card-img {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .dessert-card-info {
+                h4 {
+                    margin: 5px 0;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 12px;
+                    color: var(--dark-grey);
+                    margin: 10px 0;
+                }
+            }
+
+            .dessert-card-price {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                a {
+                    background-color: var(--brown);
+                    width: 100px;
+                    height: 25px; 
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 12px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.subscribe {
+    margin-top: 50px;
+    background-color: var(--brown);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .subscribe-info {
+        text-align: center;
+        color: var(--white);
+
+        h3 {
+            font-size: 32px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    }
+
+    .coffee-hand {
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+
+    .coffee-beans {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.customer {
+    margin: 50px 0;
+
+    .customer-title {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .customer-slide {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        color: var(--white);
+
+        .customer-items {
+            background-color: var(--brown);
+            width: 370px;
+            padding: 20px;
+            border-radius: 10px;
+
+            h4 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 10px 0;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.cta {
+    background: url("../img/subs-bg.png");
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cta-info {
+        width: 560px;
+        text-align: center;
+        color: var(--white);
+
+        h3 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 400px;
+                height: 40px;
+                border: none;
+                outline: none;
+                border-radius: 100px;
+                padding-left: 20px;
+            }
+
+            button {
+                width: 150px;
+                height: 40px;
+                background-color: var(--black);
+                border: none;
+                outline: none;
+                border-radius: 100px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: var(--black);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
